@@ -22,7 +22,6 @@
 
 - 한 가지 관심에 대한 변경이 일어날 경우 그 관심이 집중된 부분만 수정
 - 중복 제거
-- 
 ##UserDao2 - abstract class UserDao
 - _Super class_ : DAO의 핵심기능 구현, 일부는 추상 method
 - _Sub class_ : Super method 의 일부 기능 구현
@@ -32,15 +31,12 @@
 > 1. 다중 상속 불가능
 > 2. 여저힌 두 가지 다른 관심사에 대한 긴밀한 결합 존재
 > 3. 확장된 기능을 다른 Class 에 상속 불가능, 중복 야기
-
 ##UserDao3 - 별도의 class 분리
 >- DB connection 확장 불가능
 >1. SimpleConnect상ionMaker 에 Dao가 의존
 >2. method가 뭔지 알고있음
-
 ##UserDao4 - interface 도입
 >구현 Object 선택 결정이 UserDao 안에 있어(또 다른 책임)
-
 ##UserDao4 - DI
 >- userDao 사용하는 client 가 구현 Object 결정  
 >~~class->class~~\
