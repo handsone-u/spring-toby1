@@ -15,7 +15,7 @@
 >~~관심사의 분리~~
 
 
-### UserDao1 의 관심사항
+- UserDao1 의 관심사항
 1. DB 연결 connection 생성
 2. DB에 보낼 SQL 생성&실행
 3. 공유 리소스 반환
@@ -54,3 +54,4 @@
 >~~class->class~~\
 > obj -> obj
 >- **다형성**
+***
