@@ -29,7 +29,9 @@ dependencies {
 </code>
 </pre>
 
+- IntelliJIDEA
 - gradle 프로젝트
 - H2 database
 - lombok
+- assertJ
 - spring boot
