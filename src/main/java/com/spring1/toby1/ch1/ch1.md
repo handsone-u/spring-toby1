@@ -40,6 +40,7 @@
 
 ##UserDao4 - interface 도입
 >구현 Object 선택 결정이 UserDao 안에 있어(또 다른 책임)
+
 ##UserDao4 - DI
 >- userDao 사용하는 client 가 구현 Object 결정  
 >~~class->class~~\
