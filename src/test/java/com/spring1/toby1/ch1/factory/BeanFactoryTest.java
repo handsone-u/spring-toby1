@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BeanFactoryTest {
 
-    @Test
+//    @Test
     public void beanFactoryTest() throws SQLException, ClassNotFoundException {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanFactory.class);
 
@@ -28,5 +28,31 @@ class BeanFactoryTest {
 
         assertThat(user.getId()).isEqualTo(getUser.getId());
         System.out.println("등록&조회 성공");
+    }
+
+    @Test
+    public void nonSingleton() {
+        DaoFactory daoFactory = new DaoFactory();
+
+        UserDao4 bean1 = daoFactory.userDao4();
+        UserDao4 bean2 = daoFactory.userDao4();
+
+        System.out.println("bean1 = " + bean1);;
+        System.out.println("bean2 = " + bean2);
+        assertThat(bean1).isNotEqualTo(bean2);
+        assertThat(bean1).isNotSameAs(bean2);
+    }
+
+    @Test
+    public void singleton() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanFactory.class);
+
+        UserDao4 bean1 = context.getBean(UserDao4.class);
+        UserDao4 bean2 = context.getBean(UserDao4.class);
+
+        System.out.println("bean1 = " + bean1);
+        System.out.println("bean2 = " + bean2);
+        assertThat(bean1).isSameAs(bean2);
+        assertThat(bean1).isEqualTo(bean2);
     }
 }
