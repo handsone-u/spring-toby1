@@ -3,6 +3,7 @@ package com.spring1.toby1.ch1.factory;
 import com.spring1.toby1.ch1.ConnectionMaker;
 import com.spring1.toby1.ch1.NConnectionMaker;
 import com.spring1.toby1.ch1.UserDao4;
+import com.spring1.toby1.ch1.UserDaoFinal;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
@@ -11,10 +12,9 @@ import javax.sql.DataSource;
 
 @Configuration
 public class BeanFactory {
-
     @Bean
-    public UserDao4 userDao() {
-        return new UserDao4(connectionMaker());
+    public UserDaoFinal userDao() {
+        return new UserDaoFinal(dataSource());
     }
 
     @Bean
