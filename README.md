@@ -2,8 +2,8 @@
 ===========================
 
 ## 목차
-1. 오브젝트와 의존관계
-2. 테스트
+1. [오브젝트와 의존관계](https://ripple-acorn-981.notion.site/Part-1-1-88d993e0d0a24d95aed163bb010633d2)
+2. [테스트](https://ripple-acorn-981.notion.site/part-1-2-b4ee905c8ec748f280abfa051713cbb6)
 3. 템플릿
 4. 예외
 5. 서비스 추상화
