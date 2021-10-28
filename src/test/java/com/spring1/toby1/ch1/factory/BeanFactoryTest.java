@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BeanFactoryTest {
 
-//    @Test
+    @Test
     public void beanFactoryTest() throws SQLException, ClassNotFoundException {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanFactory.class);
 
