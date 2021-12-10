@@ -6,7 +6,7 @@
 2. [테스트](https://ripple-acorn-981.notion.site/part-1-2-b4ee905c8ec748f280abfa051713cbb6)
 3. [템플릿](https://ripple-acorn-981.notion.site/part-1-3-93a0e2f01e634c9e9eaffc894c77a2ac)
 4. [예외](https://ripple-acorn-981.notion.site/part-1-4-c62a5a90b48e4a2d87a7f92dc7556a24)
-5. 서비스 추상화
+5. [서비스 추상화](https://ripple-acorn-981.notion.site/part-1-5-4ab026ebdb254b1fb0a560183e0af23d)
 6. AOP
 7. 스프링 핵심기술의 응용
 8. 스프링이란 무엇인가?

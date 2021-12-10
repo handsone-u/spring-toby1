@@ -25,7 +25,6 @@
 - 한 가지 관심에 대한 변경이 일어날 경우 그 관심이 집중된 부분만 수정
 - 중복 제거
 
-
 ##UserDao2 - abstract class UserDao
 - _Super class_ : DAO의 핵심기능 구현, 일부는 추상 method
 - _Sub class_ : Super method 의 일부 기능 구현
@@ -40,7 +39,7 @@
 
 ##UserDao3 - 별도의 class 분리
 >- DB connection 확장 불가능
->1. SimpleConnect상ionMaker 에 Dao가 의존
+>1. SimpleConnectionMaker 에 Dao가 의존
 >2. method가 뭔지 알고있음
  
 
